@@ -1,0 +1,22 @@
+Dayone/DemoTraining/bin/
+Dayone/DemoTraining/obj/
+Dayone/DemoTraining/Properties/
+Dayone/DemoTraining/packages/
+Dayone/DemoTraining/.vs/
+
+
+Dayone/GameLibrary/bin/
+Dayone/GameLibrary/obj/
+Dayone/GameLibrary/Properties/
+Dayone/GameLibrary/packages/
+Dayone/GameLibrary/.vs/
+
+Dayone/GameUnitTest/bin/
+Dayone/GameUnitTest/obj/
+Dayone/GameUnitTest/Properties/
+Dayone/GameUnitTest/packages/
+Dayone/GameUnitTest/.vs/
+
+*.exe
+*.dll
+~$C# Training Basic.pptx
