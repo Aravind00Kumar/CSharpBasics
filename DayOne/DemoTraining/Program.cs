@@ -2,7 +2,7 @@
 using System.IO;
 using DemoTraining;
 using GameLibrary;
-namespace DemoTraining2
+namespace DemoTraining
 {
     class Program
     {
@@ -26,9 +26,12 @@ namespace DemoTraining2
 
             //GenericsExample.Execute();
 
-            Game flightGame = new Game();
-            flightGame.Run();
+            //Game flightGame = new Game();
+            //flightGame.Run();
 
+
+            //EntensionMethodsExample.Execute();
+            DelegatesExample2.Execute();
 
             Console.ReadKey();
 

@@ -2,7 +2,7 @@
 
 namespace GameLibrary
 {
-    public class Bullet : MovableConcoleObject
+    public class Bullet : MovableConcoleElement
     {
         public Bullet(int xpos, int ypos)
         {
