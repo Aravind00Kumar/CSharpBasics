@@ -31,7 +31,8 @@ namespace DemoTraining
 
 
             //EntensionMethodsExample.Execute();
-            DelegatesExample2.Execute();
+            //DelegatesExample2.Execute();
+            EventsDemo.Execute();
 
             Console.ReadKey();
 

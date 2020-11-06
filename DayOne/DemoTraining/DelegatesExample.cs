@@ -1,19 +1,21 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.IO;
-using System.Runtime.InteropServices;
-using DemoTraining;
-using GameLibrary;
 using System.Linq;
 namespace DemoTraining
 {
-
     /*
      * 
      * Class
      * enum
      * interface
      * delegate
+     */
+
+    /*
+        Properties
+        Fields
+        Methods
+     
      */
 
 
