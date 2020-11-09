@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameLibrary", "..\GameLibra
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameUnitTest", "..\GameUnitTest\GameUnitTest.csproj", "{647839EE-B080-43EF-B696-C966915E154C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EdgeDriverTestWebSite", "..\EdgeDriverTestWebSite\EdgeDriverTestWebSite.csproj", "{CC491561-B3DC-4E3B-B569-214EE9AA85FD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{647839EE-B080-43EF-B696-C966915E154C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{647839EE-B080-43EF-B696-C966915E154C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{647839EE-B080-43EF-B696-C966915E154C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CC491561-B3DC-4E3B-B569-214EE9AA85FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC491561-B3DC-4E3B-B569-214EE9AA85FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC491561-B3DC-4E3B-B569-214EE9AA85FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC491561-B3DC-4E3B-B569-214EE9AA85FD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

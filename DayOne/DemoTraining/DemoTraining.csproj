@@ -59,6 +59,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="readme.txt" />
+    <Compile Include="ReflectionDemo.cs" />
+    <Compile Include="ThreadsDemo.cs" />
     <Compile Include="EventsDemo.cs" />
     <Compile Include="DelegatesExample.cs" />
     <Compile Include="EntensionMethodsExample.cs" />

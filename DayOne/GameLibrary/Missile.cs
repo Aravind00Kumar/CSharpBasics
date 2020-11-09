@@ -2,19 +2,10 @@
 
 namespace GameLibrary
 {
-    public class Missile : MovableConcoleElement
+    public class Missile : MovableConcoleElement, IConsoleElement, IConsoleMovableElement
     {
-        public Missile(int xpos, int ypos)
+        public Missile(int xpos, int ypos) : base(xpos, ypos, 10000000 / 6, "#")
         {
-            XPos = xpos;
-            YPos = ypos;
-        }
-
-        public void Show()
-        {
-            Hide();
-            Console.SetCursorPosition(XPos, YPos);
-            Console.Write("#");
         }
     }
 }

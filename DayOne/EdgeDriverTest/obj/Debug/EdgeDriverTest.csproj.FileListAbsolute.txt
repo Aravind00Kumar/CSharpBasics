@@ -1,0 +1,13 @@
+D:\Office\Training\C#Basics\DayOne\EdgeDriverTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+D:\Office\Training\C#Basics\DayOne\EdgeDriverTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+D:\Office\Training\C#Basics\DayOne\EdgeDriverTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+D:\Office\Training\C#Basics\DayOne\EdgeDriverTest\bin\Debug\EdgeDriverTest.dll
+D:\Office\Training\C#Basics\DayOne\EdgeDriverTest\bin\Debug\EdgeDriverTest.pdb
+D:\Office\Training\C#Basics\DayOne\EdgeDriverTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+D:\Office\Training\C#Basics\DayOne\EdgeDriverTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+D:\Office\Training\C#Basics\DayOne\EdgeDriverTest\bin\Debug\WebDriver.dll
+D:\Office\Training\C#Basics\DayOne\EdgeDriverTest\obj\Debug\EdgeDriverTest.csprojAssemblyReference.cache
+D:\Office\Training\C#Basics\DayOne\EdgeDriverTest\obj\Debug\EdgeDriverTest.csproj.CoreCompileInputs.cache
+D:\Office\Training\C#Basics\DayOne\EdgeDriverTest\obj\Debug\EdgeDriverTest.csproj.CopyComplete
+D:\Office\Training\C#Basics\DayOne\EdgeDriverTest\obj\Debug\EdgeDriverTest.dll
+D:\Office\Training\C#Basics\DayOne\EdgeDriverTest\obj\Debug\EdgeDriverTest.pdb

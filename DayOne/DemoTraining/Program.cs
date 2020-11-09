@@ -26,14 +26,17 @@ namespace DemoTraining
 
             //GenericsExample.Execute();
 
-            //Game flightGame = new Game();
-            //flightGame.Run();
+            Game flightGame = new Game();
+            flightGame.Run();
 
 
             //EntensionMethodsExample.Execute();
             //DelegatesExample2.Execute();
-            EventsDemo.Execute();
+            //EventsDemo.Execute();
 
+            //ThreadsDemo.Execute();
+
+            //ReflectionDemo.Execute();
             Console.ReadKey();
 
         }

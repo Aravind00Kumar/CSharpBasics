@@ -2,18 +2,8 @@
 
 namespace GameLibrary
 {
-    public class Flight : MovableConcoleElement
+    public class Flight : MovableConcoleElement, IConsoleElement
     {
-        public Flight(int xpos, int ypos)
-        {
-            XPos = xpos;
-            YPos = ypos;
-        }
-        public void Show()
-        {
-            Hide();
-            Console.SetCursorPosition(XPos, YPos);
-            Console.Write("^");
-        }
+        public Flight(int xpos, int ypos) : base(xpos, ypos, 0, "^") { }
     }
 }

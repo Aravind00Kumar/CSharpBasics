@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "XfgFcSRu3RJy5J6Q6S8uQVoPoOkLP+DXaGnV+yZeWjAbjvsNtq/Ke7+NzM7zzzlfC0MSnIzyDJDAfIAh04/veA==",
+  "success": true,
+  "projectFilePath": "D:\\Office\\Training\\C#Basics\\DayOne\\EdgeDriverTest\\EdgeDriverTest.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\z003cp7e\\.nuget\\packages\\mstest.testframework\\2.1.2\\mstest.testframework.2.1.2.nupkg.sha512",
+    "C:\\Users\\z003cp7e\\.nuget\\packages\\selenium.webdriver\\3.141.0\\selenium.webdriver.3.141.0.nupkg.sha512"
+  ],
+  "logs": []
+}

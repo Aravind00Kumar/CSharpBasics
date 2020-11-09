@@ -2,8 +2,24 @@
 
 namespace GameLibrary
 {
-    public abstract class MovableConcoleElement : ConsoleObject
+    public abstract class MovableConcoleElement : ConsoleElement, IConsoleMovableElement
     {
+        public MovableConcoleElement(int xpos, int ypos, int speed, string content) : base(xpos, ypos, content) {
+            Speed = speed;
+        }
+        public int Speed { get ; set ; }
+        private long _ticks = 0;
+        private bool isTimeEllapsed()
+        {
+            if (_ticks == 0)
+                _ticks = DateTime.Now.Ticks; // 1000000 - sec //12
+            if (DateTime.Now.Ticks > Speed + _ticks)
+            {
+                _ticks = 0;
+                return true;
+            }
+            return false;
+        }
         private void MoveLeft()
         {
            if(XPos - 1 > 1) --XPos;
@@ -14,7 +30,9 @@ namespace GameLibrary
         }
         private void MoveTop()
         {
-            --YPos;
+            if (isTimeEllapsed()) { 
+                --YPos;
+            }
         }
         public void Move(Direction direction)
         {
@@ -30,13 +48,6 @@ namespace GameLibrary
                     MoveRight();
                     break;
             }
-        }
-        public void Hide()
-        {
-            Console.SetCursorPosition(XPos - 1, YPos);
-            Console.Write("   ");
-            Console.SetCursorPosition(XPos, YPos + 1);
-            Console.Write("   ");
         }
     }
 }

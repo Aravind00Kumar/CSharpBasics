@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Threading;
+using System.Collections.Generic;
 
 namespace GameLibrary
 {
@@ -8,70 +9,76 @@ namespace GameLibrary
 
         const int XMAX = 120;
         const int YMAX = 30;
+        private ScoreBoard score;
+        List<MovableConcoleElement> ammunition;
         public Game()
         {
             Console.SetWindowSize(XMAX, YMAX);
             Console.CursorVisible = false;
+            score = new ScoreBoard(XMAX - 15, 1, "10");
+            score.Show();
+            ammunition = new List<MovableConcoleElement>();
         }
         public void Run()
         {
             Flight flightObj = new Flight(XMAX / 2, YMAX - 2);
             flightObj.Show();
-            Bullet bullet = null;
-            Missile missile = null;
-            
+            MovableConcoleElement bullet = null;
+            MovableConcoleElement missile = null;
+            ConsoleKeyInfo ch;
             do
             {
-                ConsoleKeyInfo ch = Console.ReadKey(true);
+                if (Console.KeyAvailable) { 
+                    ch = Console.ReadKey(true);
+                }
                 switch (ch.Key)
                 {
                     case ConsoleKey.LeftArrow:
+                        flightObj.Hide();
                         flightObj.Move(GameLibrary.Direction.Left);
+                        flightObj.Show();
                         break;
                     case ConsoleKey.RightArrow:
+                        flightObj.Hide();
                         flightObj.Move(GameLibrary.Direction.Right);
+                        flightObj.Show();
                         break;
                     case ConsoleKey.UpArrow:
-                        bullet = new Bullet(flightObj.XPos, flightObj.YPos - 2);
+                        ammunition.Add(new Bullet(flightObj.XPos, flightObj.YPos - 2));
                         break;
                     case ConsoleKey.G:
-                        missile = new Missile(flightObj.XPos, flightObj.YPos - 2);
+                        ammunition.Add(new Missile(flightObj.XPos, flightObj.YPos - 2));
                         break;
 
+                    case ConsoleKey.P:
+                        ammunition.Add(new PrimaryGun(flightObj.XPos, flightObj.YPos - 2));
+                        break;
                     case ConsoleKey.E:
                         Console.ReadKey();
                         Environment.Exit(0);
                         break;
                 }
-
-                while (bullet != null) {
-                    Thread.Sleep(200);
-                    if (bullet.YPos <= 2)
-                    {
-                        bullet.Hide();
-                        bullet = null;
-                    }
-                    else { 
-                        bullet.Move(Direction.Top);
-                        bullet.Show();
-                    }
-                }
-
-                while (missile != null)
+                for (int i = 0; i < ammunition.Count; i++)
                 {
-                    Thread.Sleep(200);
-                    if (missile.YPos <= 2)
+                    var item = ammunition[i];
+                    if (item != null)
                     {
-                        missile.Hide();
-                        missile = null;
-                    }
-                    else
-                    {
-                        missile.Move(Direction.Top);
-                        missile.Show();
+                        if (item.YPos <= 2)
+                        {
+                            item.Hide();
+                            ammunition.Remove(item);
+                        }
+                        else
+                        {
+                            item.Hide();
+                            item.Move(Direction.Top);
+                            item.Show();
+                        }
+
                     }
                 }
-                flightObj.Show();
+                ch = default;
+                
             } while (true);
         }
 
